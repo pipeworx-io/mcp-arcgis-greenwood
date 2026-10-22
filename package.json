@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-greenwood",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "City of Greenwood GIS — Greenwood, Indiana open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-9bb065623d3655d49c1fec7cb9d7ac7b9101862cac501806811cb6cf5746db81",
-    "sourceCommit": "351c40908821cfecc9bb2f5849d87bbfdbb26d75"
+    "sourceHash": "v1-50f139eeb3c2add7fba492c7abe63d75e90d79c618bb5f98b4aa9b0d20c322e4",
+    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
   }
 }
