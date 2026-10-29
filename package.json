@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-greenwood",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "City of Greenwood GIS — Greenwood, Indiana open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-greenwood": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-greenwood"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-greenwood.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-greenwood",
   "pipeworx": {
-    "sourceHash": "v1-50f139eeb3c2add7fba492c7abe63d75e90d79c618bb5f98b4aa9b0d20c322e4",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "arcgis-greenwood",
+    "gatewaySlug": "arcgis-greenwood",
+    "sourceHash": "v1-c39d2ffca638c85d841a6155a73347b90b90f5de211857cb0b716d239e9ef600",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
